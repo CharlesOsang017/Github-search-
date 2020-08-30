@@ -42,5 +42,4 @@ findProfile(){
     this.profileService.getProfileInfo().subscribe(profile => this.profile = profile);
     this.profileService.getProfileRepos().subscribe(repos =>  this.repos = repos);
   }
-
 }
