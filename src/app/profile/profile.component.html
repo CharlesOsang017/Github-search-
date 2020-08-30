@@ -39,14 +39,17 @@
       <div class="col-sm-6">
         <div>
           <hr>
-          <p  class="card bg-info">
-            <span class="span"> {{profile.followers}} Followers</span>&nbsp;
+          <p  class="bg-info">
+            <span class="span"> {{profile.followers}} Followers</span>&nbsp;<br>
 
-            <span class="span"> {{profile.following}} Following </span>&nbsp;
+            <span class="span"> {{profile.following}} Following </span>&nbsp;<br>
 
-            <span class="span"> {{profile.public_gists}} gists</span>&nbsp;
-            <!-- <a href="{{profile.html_url}}" target="_blank" class=" view  btn btn-info"> {{profile.public_repos}} Repositories</a> -->
+            <span class="span"> {{profile.public_gists}} Gists</span>&nbsp;<br>
+            <span class="span">{{profile.public_repos}} Repositories</span>&nbsp;
+
          </p>
+          <a href="{{profile.html_url}}" target="_blank" class=" view  btn btn-info">  View in Github</a>
+
           <hr>
           <hr>
           <p>
