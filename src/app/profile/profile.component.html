@@ -2,7 +2,7 @@
 <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 <div class="container-fluid" id="head">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
   <h1><i class="fab fa-github"></i><strong>Github</strong></h1>
   <form action="" class="form">
     <div class="form-group">
@@ -27,25 +27,25 @@
       <div class="col-sm-2">
         <img class="img" src="{{profile.avatar_url}}">
       </div>
-      <div class="col-sm-3">
-        <ul class="list-group">
+      <!-- <div class="col-sm-3">
+        <ul class="group">
           <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
           <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
           <li class="list-group-item" *ngIf="profile.hireable">{{profile.hireable}}</li>
           <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
         </ul>
-      </div> 
+      </div>  -->
 
       <div class="col-sm-6">
         <div>
           <hr>
-          <p  class="buton">
-            <span class="span" class="btn btn-primary"> {{profile.followers}} Followers</span>&nbsp;
+          <p  class="card bg-info">
+            <span class="span"> {{profile.followers}} Followers</span>&nbsp;
 
-            <span class="span" class="btn btn-dark"> {{profile.following}} Following </span>&nbsp;
+            <span class="span"> {{profile.following}} Following </span>&nbsp;
 
-            <span class="span" class="btn btn-secondary"> {{profile.public_gists}} gists</span>&nbsp;
-            <a href="{{profile.html_url}}" target="_blank" class=" view  btn btn-info"> {{profile.public_repos}} Repositories</a>
+            <span class="span"> {{profile.public_gists}} gists</span>&nbsp;
+            <!-- <a href="{{profile.html_url}}" target="_blank" class=" view  btn btn-info"> {{profile.public_repos}} Repositories</a> -->
          </p>
           <hr>
           <hr>
@@ -59,4 +59,5 @@
   </div> 
 </div>
 </div>
+
  
