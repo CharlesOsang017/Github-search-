@@ -50,3 +50,7 @@ nav .img{
    display: inline-flex;
    justify-content: space-between;
 }
+.landing-page{
+    display: flex;
+    justify-content: center;
+}
