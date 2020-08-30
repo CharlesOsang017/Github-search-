@@ -17,7 +17,7 @@
     width: 75%;
     margin-left: 25%;
 
-}
+} */
 nav{
     color: white;
     padding: 10px;
@@ -29,22 +29,22 @@ nav{
 .navbar a{
     text-decoration: none;
 }
-.navbar a :hover{
+/* .navbar a :hover{
     border: 2px rgb(26, 71, 138);
     background-color: rgb(227, 235, 121) ;
     transition-duration: 1s;
     border-radius: 25px;
-}
+} */
 nav .img{
     height:35px;
 }
-.img-1{
+/* .img-1{
     position: relative;
     left: 87vh;
     border-radius: 1000px;
     height:35px;
-}
-.icons{
+} */
+/* .icons{
     position: relative;
     left: 83vh;
    display: inline-flex;
