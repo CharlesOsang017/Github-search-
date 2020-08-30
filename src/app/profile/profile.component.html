@@ -1,1 +1,64 @@
-<p>profile works!</p>
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Yeon+Sung&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<div class="container-fluid" id="head">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <h1><i class="fab fa-github"></i><strong>Github</strong></h1>
+  <form action="" class="form">
+    <div class="form-group">
+      <input type="text" placeholder="Search or jump to...."class="form-control" [(ngModel)]="username"
+        name="username" (keyup)="findProfile()">     
+    </div>
+  </form><br><br>
+  <a href="#"><li>Pulls</li></a>
+  <a href="#"><li>Issues</li></a>
+  <a href="#"><li>Marketplace</li></a>
+  <a href="#"><li>Explore</li></a> 
+  <div class="icons">
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-plus"></i><i class="fas fa-caret-down"></i> 
+ </div>
+    <img class="img-1" src="{{profile.avatar_url}}">
+ </nav>
+ <br><br>
+  <div *ngIf="profile" class="prof">
+    <div class="col-sm-8">
+      <div class="col-sm-2">
+        <img class="img" src="{{profile.avatar_url}}">
+      </div>
+      <div class="col-sm-3">
+        <ul class="list-group">
+          <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+          <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
+          <li class="list-group-item" *ngIf="profile.hireable">{{profile.hireable}}</li>
+          <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
+        </ul>
+      </div>
+
+      <div class="col-sm-6">
+        <div>
+          <hr>
+          <p  class="buton">
+            <span class="span" class="btn btn-primary"> {{profile.followers}} Followers</span>&nbsp;
+
+            <span class="span" class="btn btn-warning"> {{profile.following}} Following </span>&nbsp;
+
+            <span class="span" class="btn btn-info"> {{profile.public_gists}} gists</span>&nbsp;
+
+            <span class="span" class="btn btn-success"> {{profile.public_repos}} Repositories</span>
+          </p>
+          <hr>
+          <hr>
+
+          <p>
+            <a href="{{profile.html_url}}" target="_blank" class=" view  btn btn-info">View profile on github</a>
+
+          </p>
+          <hr>
+          <br><br><br><br><br><br>
+           </div>
+     </div>
+    </div>
+  </div>
+</div>
+ 
