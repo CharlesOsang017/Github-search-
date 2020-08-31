@@ -13,7 +13,7 @@ The project, Github-search displays each individuals project repositories.It wor
 
 ## GitHub live link
 
-
+ https://charlesosang017.github.io/Github-search-/
 
 ## License
 MIT
