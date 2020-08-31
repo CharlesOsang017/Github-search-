@@ -9,7 +9,9 @@
 ## Description of project
 
 The project, Github-search displays each individuals project repositories.It works the same as the original Github site 
+## Technology
 
+* Angular
 
 ## GitHub live link
 
