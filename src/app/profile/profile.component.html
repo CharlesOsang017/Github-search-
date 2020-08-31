@@ -20,6 +20,7 @@
  </div>
     <img class="img-1" src="{{profile.avatar_url}}">
  </nav>
+
  <br><br>
  <div class="landing-page">
   <div *ngIf="profile" class="prof">
@@ -27,15 +28,6 @@
       <div class="col-sm-2">
         <img class="img" src="{{profile.avatar_url}}">
       </div>
-      <!-- <div class="col-sm-3">
-        <ul class="group">
-          <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-          <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
-          <li class="list-group-item" *ngIf="profile.hireable">{{profile.hireable}}</li>
-          <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
-        </ul>
-      </div>  -->
-
       <div class="col-sm-6">
         <div>
           <hr>
@@ -46,16 +38,15 @@
 
             <span class="span"> {{profile.public_gists}} Gists</span>&nbsp;<br>
             <span class="span">{{profile.public_repos}} Repositories</span>&nbsp;
-
          </p>
           <a href="{{profile.html_url}}" target="_blank" class=" view  btn btn-primary">  View in Github</a>
-
           <hr>
           <hr>
+         
           <p>
           </p>
           <hr>
-          <br><br><br><br><br><br>
+          <br>
            </div>
      </div>
     </div>
